@@ -1,19 +1,19 @@
 function insert(num){
-    document.form.textview.value = document.form.textview.value + num;
+    document.getElementById("textview").value = document.getElementById("textview").value + num;
 }
 
 function equal(){
-    var exp = document.form.textview.value;
+    var exp = document.getElementById("textview").value;
     if (exp) {
-        document.form.textview.value = eval(exp);
+        document.getElementById("textview").value = eval(exp);
     }
 }
 
 function clean(){
-    document.form.textview.value = "";
+    document.getElementById("textview").value = "";
 }
 
 function back(){
-    var exp = document.form.textview.value;
-    document.form.textview.value = exp.substring(0, exp.length - 1);
+    var exp = document.getElementById("textview").value;
+    document.getElementById("textview").value = exp.substring(0, exp.length - 1);
 }
